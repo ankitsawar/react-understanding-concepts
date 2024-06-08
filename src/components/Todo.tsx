@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import TodoForm from "./TodoForm";
-import SingleTodo from "./SingleTodo";
+import TodoForm from "./Todo/TodoForm";
+import SingleTodo from "./Todo/SingleTodo";
 import TodoContext from "../contexts/TodoContext";
 
 const Todo = () => {

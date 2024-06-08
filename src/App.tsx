@@ -1,15 +1,10 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { routes } from './Router';
 
-import Todo from './components/Todo'
-import { TodoProvider } from './contexts/TodoContext'
+const appRouter = createBrowserRouter(routes);
 
 function App() {
-   return (
-      <div className='mx-auto my-auto h-full'>
-         <TodoProvider>
-            <Todo />
-         </TodoProvider>
-      </div>
-   )
+   return <RouterProvider router={appRouter} />
 }
 
 export default App;

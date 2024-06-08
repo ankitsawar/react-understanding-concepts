@@ -2,9 +2,9 @@
 import { useContext } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Todo as TodoTypes } from "./SingleTodo";
-import TodoContext from "../contexts/TodoContext";
+import TodoContext from "../../contexts/TodoContext";
 
-type Inputs = {
+export type Inputs = {
    todo: string
 }
 
